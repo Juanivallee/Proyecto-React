@@ -1,0 +1,133 @@
+@font-face {
+  font-family: crisis;
+  src: url(../public/assets/TS\ Block\ Bold.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.Navbar{
+  height: 10%;
+  border-bottom: 1px solid rgb(29, 29, 29);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo{
+  margin: 25px;
+}
+
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+  margin: 35px;
+}
+
+.nav-item{
+  margin-right: 75px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover{
+  color: grey ;
+  text-shadow: 0 0 8px white;
+}
+
+.container-cart-icon{
+  position: relative;
+}
+
+.icon-cart{
+  width: 37px;
+  height: 37px;
+  stroke: white;
+  margin-bottom: 4px;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+.count-products{
+  position: absolute;
+  top: 43%;
+  right: 1;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 18px;
+  height:18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.count-products:hover{
+  cursor: pointer;
+}
+
+main {
+  background-color: black;
+  height: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  background-image: url(../public/assets/parking-space-gc48195519_640.jpg);
+  background-color: black;
+  height: 30vh;
+  width: 96%;
+  background-size: cover;
+  background-position: center;
+  border: solid 2px rgb(128, 128, 128);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan {
+  color: rgb(255, 255, 255);
+  font-size: 46px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: crisis;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+@media (min-width: 1407px) {
+  .nav-item {
+    margin-right: 110px;
+  }
+  .slogan {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-item{
+    margin-right: 30px;
+  }
+}
